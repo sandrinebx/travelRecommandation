@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+		<style>
+			<style>
+			#search::placeholder{
+				color: grey;
+				font-weight: bold;
+                font-family:Arial;
+			}
+			#maincontact{
+				background-image: url(./background.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 100vh;
+				width: 100%;
+				display:grid;
+				grid-template-columns: repeat(10,1fr);
+				grid-template-rows: repeat(10,1fr);
+				grid-gap: 10px;
+                font-family:Arial;
+			}
+			#subcontact{
+				display: flex;
+				justify-content: space-around;
+			}
+		</style>
+    </head>
+    <body>
+        <nav style="height:30px;display: grid; grid-template-columns: repeat(3, 1fr); justify-content: space-between; align-items: center; color: white; background-color: rgb(0, 30, 0); padding: 10px;">
+			<span style="grid-column: 1/2; font-family:Arial">
+                <img src="logo.jpg" alt="logo" width="30" height="20">
+                <strong font-family:Arial>Tripes Advisor</strong>
+            </span>
+			<div style="grid-column: 2/3;display: flex; gap: 20px">
+				<a href="./travel_recommendation.html" style="color: white; text-decoration: none; font-weight: bold; font-family:Arial;">Home</a>
+				<a href="./about_us.html" style="color: white; text-decoration: none; font-weight: bold; font-family:Arial;">About us</a>
+				<a href="./contact_us.html" style="color: white; text-decoration: none; font-weight: bold; font-family:Arial;">Contact Us</a>
+			</div>
+        </nav>
+		<div id="maincontact">
+<div id="mother">
+				<p id="h">CONTACT US</p>
+				<div id="form_container">
+					<form id="form">
+						<div>
+							<label for="name" style="font-weight: bold;">Name:</label><br>
+                            <input type="text" id="name"  name="name" style="background: none;border-radius: 5px;	border-color: white;" required><br>
+						</div>
+						<div>
+							<label for="email" style="font-weight: bold;">Email:</label><br>
+                            <input type="email" id="email" name="email" style="background: none;border-radius: 5px;	border-color: white;" required><br>
+						</div>
+						<div>
+							<label for="message" style="font-weight: bold;">Message:</label><br>
+                            <textarea id="message" name="message" rows="10" style="background: none;border-radius: 5px;	border-color: white;" required></textarea><br>
+						</div>
+						<div>
+							<button type="submit" id="submitBtn" style="font-weight: bold; color: white; border-radius: 5px; background-color: grey; border: none; width: 100%;">Submit</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+        </div>
+        <!-- <script type="text/javascript" src="travel_recommendation.js"></script> -->
+    </body>
+</html>
