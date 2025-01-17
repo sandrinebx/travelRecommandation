@@ -21,20 +21,19 @@
 				grid-gap: 10px;
                 font-family:Arial;
 			}
-            #mother{
-                grid-column: 3/9;
+            #formcontact{
+                grid-column: 3/7;
 				grid-row: 2/8;
-				backdrop-filter: blur(6px);
                 display: grid;
 				grid-template-columns: repeat(6, 1fr);
-				grid-gap: 20px;
-                padding: 20px;
+				grid-gap: 10px;
+                padding: 10px;
             }
 			#subcontact{
 				display: flex;
 				justify-content: space-around;
 			}
-            #h{
+            #titlecontact{
 				grid-column: 1/5;
 				color: white;
 				font-size: 36px;
@@ -49,7 +48,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                padding: 20px;
+                padding: 30px;
 				color: white;
             }
 		</style>
@@ -67,24 +66,24 @@
 			</div>
         </nav>
 		<div id="maincontact">
-			<div id="mother">
-				<p id="h">CONTACT US</p>
+			<div id="formcontact">
+				<p id="titlecontact">CONTACT US</p>
 				<div id="form_container">
 					<form id="form">
-						<div>
+						<div >
 							<label for="name" style="font-weight: bold;">Name:</label><br>
-                            <input type="text" id="name" name="name" style="background: none;border-radius: 5px;	border-color: white;" required><br>
+                            <input type="text" id="name" name="name" style="background: none;border-radius: 5px;	border-color: white; width: 400px; padding: 20px;" required><br>
 						</div>
-						<div>
+						<div >
 							<label for="email" style="font-weight: bold;">Email:</label><br>
-                            <input type="email" id="email" name="email" style="background: none;border-radius: 5px;	border-color: white;" required><br>
+                            <input type="email" id="email" name="email" style="background: none;border-radius: 5px;	border-color: white;padding: 20px; width: 400px" required><br>
 						</div>
-						<div>
+						<div >
 							<label for="message" style="font-weight: bold;">Message:</label><br>
-                            <textarea id="message" name="message" rows="10" style="background: none;border-radius: 5px;	border-color: white;" required></textarea><br>
+                            <textarea id="message" name="message" rows="10" style="background: none;border-radius: 5px;	border-color: white;padding: 20px; width: 400px" required></textarea><br>
 						</div>
 						<div>
-							<button type="submit" id="submitBtn" style="font-weight: bold; color: white; border-radius: 5px; background-color: cadetblue; border: none; width: 100%;">Submit</button>
+							<button type="submit" id="submitBtn" style="font-weight: bold; color: white; border-radius: 5px; background-color: grey; border: none; padding: 20px;width: 410px; ">Submit</button>
 						</div>
 
 					</form>
