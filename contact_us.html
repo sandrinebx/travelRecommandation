@@ -21,10 +21,37 @@
 				grid-gap: 10px;
                 font-family:Arial;
 			}
+            #mother{
+                grid-column: 3/9;
+				grid-row: 2/8;
+				backdrop-filter: blur(6px);
+                display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-gap: 20px;
+                padding: 20px;
+            }
 			#subcontact{
 				display: flex;
 				justify-content: space-around;
 			}
+            #h{
+				grid-column: 1/5;
+				color: white;
+				font-size: 36px;
+				display: flex;
+				align-items: center;
+                padding: 20px;
+                text-align: center;
+                font-weight: bold;
+			}
+			#form_container{
+				grid-column: 5/7;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+				color: white;
+            }
 		</style>
     </head>
     <body>
@@ -40,13 +67,13 @@
 			</div>
         </nav>
 		<div id="maincontact">
-<div id="mother">
+			<div id="mother">
 				<p id="h">CONTACT US</p>
 				<div id="form_container">
 					<form id="form">
 						<div>
 							<label for="name" style="font-weight: bold;">Name:</label><br>
-                            <input type="text" id="name"  name="name" style="background: none;border-radius: 5px;	border-color: white;" required><br>
+                            <input type="text" id="name" name="name" style="background: none;border-radius: 5px;	border-color: white;" required><br>
 						</div>
 						<div>
 							<label for="email" style="font-weight: bold;">Email:</label><br>
@@ -57,13 +84,12 @@
                             <textarea id="message" name="message" rows="10" style="background: none;border-radius: 5px;	border-color: white;" required></textarea><br>
 						</div>
 						<div>
-							<button type="submit" id="submitBtn" style="font-weight: bold; color: white; border-radius: 5px; background-color: grey; border: none; width: 100%;">Submit</button>
+							<button type="submit" id="submitBtn" style="font-weight: bold; color: white; border-radius: 5px; background-color: cadetblue; border: none; width: 100%;">Submit</button>
 						</div>
 
 					</form>
 				</div>
 			</div>
-        </div>
-        <!-- <script type="text/javascript" src="travel_recommendation.js"></script> -->
+		</div>
     </body>
 </html>
