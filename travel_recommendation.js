@@ -20,30 +20,32 @@ function search(){
     .then(data=>{
         let result = data[val];
         let element = document.getElementById('result');
-        let inh = '';
+        let inh = `<div style = flexible-content">`;
         if (val === "countries"){
             result.forEach(item=>{
+                inh+=`<div style = row">`
                 inh+=`<br>`
                 inh+=`<h1>Country:${item["name"]}<h1>`
                 let cities = item["cities"]
                 cities.forEach(i=>{
                     inh+=`<img src=${i["imageUrl"]} style="max-width: 400px; height:auto">`;
-                    inh+=`<h3>City:${i["name"]}<h3>`;
+                    inh+=`<h3>City:${i["name"]}<h3>`
                     inh+=`<h5>${i["description"]}</h5>`
-                    inh+=`<button style="height:50px;width:150px; color: white; background-color: grey; border-radius: 5px; border: none;">VISIT</button><br><br><br><br>`
-
+                    inh+=`<button style="height:50px;width:150px; color: white; background-color: grey; border-radius: 5px; border: none;">VISIT</button>`
+                    inh+=`</div>`
                 })
                 inh+=`<br>`
             })
         }
         else{
             result.forEach(i=>{
+                inh+=`<div style = row">`
                 inh+=`<br>`
                 inh+=`<img src=${i["imageUrl"]} style="max-width: 400px; height:auto">`;
-                inh+=`<h3>City:${i["name"]}<h3>`;
+                inh+=`<h3>City:${i["name"]}<h3>`
                 inh+=`<h5>${i["description"]}</h5>`
-                inh+=`<button style="height:50px;width:150px; color: white; background-color: cadetblue; border-radius: 5px; border: none;">VISIT</button><br><br><br><br>`
-
+                inh+=`<button style="height:50px;width:150px; color: white; background-color: grey; border-radius: 5px; border: none;">VISIT</button>`
+                inh+=`</div>`
                 })
         }
 

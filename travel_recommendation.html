@@ -15,12 +15,31 @@
 				height: 100vh;
 				width: 100%;
 				display:grid;
-				grid-template-columns: repeat(10,1fr);
+				grid-template-columns: repeat(2,1fr);
 				grid-template-rows: repeat(10,1fr);
 				grid-gap: 10px;
                 font-family:Arial;
 			}
-
+            #container {
+                display: flex;
+            }
+            #fixed-content {
+                width: 200px; /* Fixed width for the left content */
+                background-color: #f0f0f0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #flexible-content {
+                flex: 1; /* Takes up the remaining space */
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #row {
+                background-color: white;
+                margin-bottom: 10px; /* Space between rows */
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
 		</style>
     </head>
     <body>
@@ -40,10 +59,9 @@
 				<button id="resetBtn"style="grid-column: 8/9;color: white; background-color: grey; border-radius: 10px; border: none;">Reset</button>
 			</div>
         </nav>
-		<div id="main1">
-            <div id="result" style="padding:20px;color:white; backdrop-filter: blur(50px);grid-column: 1/11; grid-row: 1/11; z-index: 1;font-weight:100 ;font-size: medium; display:none"></div>
-			<div id="not" style="grid-column: 2/4; grid-row: 2/5 flex; flex-direction: column; justify-content: space-between; color: white;">
-				<h1 style="text-align: left; backdrop-filter: blur(3px);">Explore<br>recommended<br>destinations</h1>
+		<div id="container">
+            <div id="fixed-content">
+                <h1 style="text-align: left; backdrop-filter: blur(3px);">Explore<br>recommended<br>destinations</h1>
                 <p style="backdrop-filter: blur(3px); text-align: justify;">I am  from Caen, and I have traveled all over the world. I give you my recommendations and my good tips in all the countries that I have had the chance to visit. Let yourself be guided!</p>
 				<button style="color: white; background-color: grey; border-radius: 5px; border: none;">BOOK NOW</button>
 			</div>
