@@ -282,18 +282,6 @@ align-self: center;
     transition: background-position .3s;
 
 }
-.x-icon{
-     background: linear-gradient( 0deg, #000000 50%, white 50%);
-    background-size: 100% 200%;
-    background-position: 0 -100%;
-    transition: background-position .3s;
-}
-.yt-icon{
-    background: linear-gradient( 0deg, #FF0000 50%, white 50%);
-    background-size: 100% 200%;
-    background-position: 0 -100%;
-    transition: background-position .3s;
-}
 .i-icon{
     background: linear-gradient(0deg, #5b51d8,#5b51d8,#c13584, #e1306c, #fd1d1d , #f77737 ,#f77737,  white 53%);
     background-size: 100% 200%;
