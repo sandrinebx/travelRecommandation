@@ -29,22 +29,12 @@ nav>div{
     display:flex;
     margin:auto 2rem;
 }
-nav>ul{
-    display: flex;
-    list-style: none;
-    gap:2rem;
-    font-size: 21px;
-    font-weight: bolder;
-}
-nav>div:first-child:hover{
-    cursor: pointer;
-}
+
 
 nav>ul>li:hover{
     cursor: pointer;
     transition: color .3s;
     color: grey;
-    
 }
 
 #search{
@@ -53,7 +43,7 @@ nav>ul>li:hover{
     justify-content: flex-end;
     background-color: rgb(255, 255, 255);
     height: 3rem;
-    width: 30rem;
+    width: 25rem;
     padding: 0 10px ;
     border-radius: 20px;
 }
